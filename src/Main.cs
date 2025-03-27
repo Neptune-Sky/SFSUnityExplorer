@@ -31,7 +31,7 @@ namespace SFSUnityExplorer
         public Dictionary<string, FilePath> UpdatableFiles => new()
         {
             {
-                "",
+                "https://github.com/Neptune-Sky/SFSUnityExplorer/releases/latest/download/UnityExplorer.dll",
                 new FolderPath(ModFolder).ExtendToFile("UnityExplorer.dll")
             },
             {
