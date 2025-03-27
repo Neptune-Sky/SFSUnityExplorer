@@ -36,7 +36,7 @@ namespace SFSUnityExplorer
             },
             {
                 "https://github.com/sinai-dev/UnityExplorer/releases/latest/download/UnityExplorer.Editor.zip",
-                new FolderPath(ModFolder).ExtendToFile("RequiredLibs.zip")
+                new FolderPath(ModFolder).ExtendToFile("UnityExplorer.Editor.zip")
             }
         };
 

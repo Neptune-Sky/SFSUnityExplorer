@@ -37,14 +37,14 @@ namespace SFSUnityExplorer
             if (!Directory.Exists(libDir) || !Directory.EnumerateFileSystemEntries(runtimeDir).Any())
             {
                 Debug.Log("Unity Explorer: Libraries directory missing files or doesn't exist, trying to extract existing libraries file...");
-                if (!File.Exists(directoryWithSeparator + "RequiredLibs.zip"))
+                if (!File.Exists(directoryWithSeparator + "UnityExplorer.Editor.zip"))
                 {
                     Debug.LogError($"RequiredLibs.zip Not Found: {Main.modFolder}");
                     librariesLoadedSuccessfully = false;
                     return;
                 }
 
-                ZipFile.ExtractToDirectory(directoryWithSeparator + "RequiredLibs.zip", libDir, true);
+                ZipFile.ExtractToDirectory(directoryWithSeparator + "UnityExplorer.Editor.zip", libDir, true);
             }
 
             try
@@ -64,7 +64,7 @@ namespace SFSUnityExplorer
             {
                 Application.Unload();
                 Directory.Delete(libDir, true);
-                File.Delete(directoryWithSeparator + "RequiredLibs.zip");
+                File.Delete(directoryWithSeparator + "UnityExplorer.Editor.zip");
                 Application.Quit();
             }
 
