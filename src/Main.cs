@@ -19,7 +19,7 @@ namespace SFSUnityExplorer
     {
         public override string ModNameID => "SFSUnityExplorer";
         public override string DisplayName => "Unity Explorer";
-        public override string Author => "NeptuneSky";
+        public override string Author => "sinai-dev, NeptuneSky";
         public override string MinimumGameVersionNecessary => "1.5.10.2";
         public override string ModVersion => "v1.0";
 
